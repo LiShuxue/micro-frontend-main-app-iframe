@@ -23,15 +23,29 @@
     <div class="content-wrapper">
       <router-view />
     </div>
+    <div class="sub-app-wrapper" v-for="(item, index) in subAppList" :key="index">
+      <sub-app :id="item.id" :src="item.src"></sub-app>
+    </div>
   </div>
 </template>
 
 <script>
+import subApp from '@/components/subApp.vue'
+import subAppConfig from '@/sub-app-config'
+
 export default {
+  data() {
+    return {
+      subAppList: subAppConfig.subAppList
+    }
+  },
   methods: {
     handleSelect (key, keyPath) {
       this.$router.push(key)
     }
+  },
+  components: {
+    subApp
   }
 }
 </script>
