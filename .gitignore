@@ -22,3 +22,8 @@ yarn-error.log*
 
 # sub application files
 sub-app
+
+# cordova assets file
+HybridWrapper/www/
+HybridWrapper/platforms/android/app/src/main/assets/www/
+HybridWrapper/platforms/ios/www/
