@@ -1,9 +1,10 @@
 import Vue from "vue";
 import Router from "vue-router";
+import manageSubApp from '@/utils/manageSubApp';
 
 Vue.use(Router);
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: "/",
@@ -22,3 +23,10 @@ export default new Router({
     }
   ]
 });
+
+router.beforeEach((to, from, next) => {
+  manageSubApp.hideAllSubApp();
+  next();
+})
+
+export default router;

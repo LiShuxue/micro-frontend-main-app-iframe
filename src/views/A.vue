@@ -1,3 +1,14 @@
 <template>
-  <div class="about"><h1>This is Module A</h1></div>
+  <div class="a"></div>
 </template>
+
+<script>
+import $ from 'jquery';
+import manageSubApp from '@/utils/manageSubApp';
+
+export default {
+  mounted() {
+    manageSubApp.showSubApp('sub-app-module-a');
+  }
+}
+</script>
