@@ -6,7 +6,11 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "test:unit": "vue-cli-service test:unit",
+    "subapp-a": "cd .. && cd micro-frontend-sub-app-a && yarn serve",
+    "subapp-b": "cd .. && cd micro-frontend-sub-app-b && yarn serve",
+    "subapp-c": "cd .. && cd micro-frontend-sub-app-c && yarn serve",
+    "start-app": "yarn serve & yarn subapp-a & yarn subapp-b & yarn subapp-c"
   },
   "dependencies": {
     "element-ui": "^2.4.11",
