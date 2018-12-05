@@ -24,9 +24,4 @@ const router = new Router({
   ]
 });
 
-router.beforeEach((to, from, next) => {
-  manageSubApp.hideAllSubApp();
-  next();
-})
-
 export default router;
