@@ -4,6 +4,7 @@ import router from "./router";
 import store from "./store";
 import ElementUI from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
+import { isAndroid, isIOS } from './utils/device';
 
 Vue.config.productionTip = false;
 Vue.use(ElementUI);
@@ -13,3 +14,7 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount("#app");
+
+document.addEventListener('deviceready', ()=>{
+  store.commit('setIsMobileMutation', (isAndroid || isIOS));
+}, false);

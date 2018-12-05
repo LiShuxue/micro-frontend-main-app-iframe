@@ -1,10 +1,19 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import { isAndroid, isIOS } from './utils/device';
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {},
-  mutations: {},
+  state: {
+    isAndroid: isAndroid,
+    isIOS: isIOS,
+    isMobile: false
+  },
+  mutations: {
+    setIsMobileMutation (state, isMobile) {
+      state.isMobile = isMobile
+    }
+  },
   actions: {}
 });

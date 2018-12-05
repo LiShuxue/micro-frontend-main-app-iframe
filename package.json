@@ -17,7 +17,8 @@
     "copy-assets-a": "mkdir -p dist/subapp/a && cp -r node_modules/micro-frontend-sub-app-a/dist/ dist/subapp/a/",
     "copy-assets-b": "mkdir -p dist/subapp/b && cp -r node_modules/micro-frontend-sub-app-b/dist/ dist/subapp/b/",
     "copy-assets-c": "mkdir -p dist/subapp/c && cp -r node_modules/micro-frontend-sub-app-c/dist/ dist/subapp/c/",
-    "build-app": "yarn build && yarn build-a && yarn build-b && yarn build-c && yarn copy-assets-a && yarn copy-assets-b && yarn copy-assets-c"
+    "build-app": "yarn build && yarn build-a && yarn build-b && yarn build-c && yarn copy-assets-a && yarn copy-assets-b && yarn copy-assets-c",
+    "build-wrapper": "rm -rf HybridWrapper/www && yarn build-app && cp -r dist/ HybridWrapper/www/ && cd HybridWrapper && cordova prepare"
   },
   "dependencies": {
     "element-ui": "^2.4.11",
