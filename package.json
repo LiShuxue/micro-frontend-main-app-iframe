@@ -7,17 +7,27 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
-    "subapp-a": "cd .. && cd micro-frontend-sub-app-a && yarn serve",
-    "subapp-b": "cd .. && cd micro-frontend-sub-app-b && yarn serve",
-    "subapp-c": "cd .. && cd micro-frontend-sub-app-c && yarn serve",
-    "start-app": "yarn serve & yarn subapp-a & yarn subapp-b & yarn subapp-c"
+    "start-a": "cd node_modules/micro-frontend-sub-app-a && yarn && yarn serve",
+    "start-b": "cd node_modules/micro-frontend-sub-app-b && yarn && yarn serve",
+    "start-c": "cd node_modules/micro-frontend-sub-app-c && yarn && yarn serve",
+    "start-app": "yarn serve & yarn start-a & yarn start-b & yarn start-c",
+    "build-a": "cd node_modules/micro-frontend-sub-app-a && yarn && yarn build",
+    "build-b": "cd node_modules/micro-frontend-sub-app-b && yarn && yarn build",
+    "build-c": "cd node_modules/micro-frontend-sub-app-c && yarn && yarn build",
+    "copy-assets-a": "mkdir -p dist/subapp/a && cp -r node_modules/micro-frontend-sub-app-a/dist/ dist/subapp/a/",
+    "copy-assets-b": "mkdir -p dist/subapp/b && cp -r node_modules/micro-frontend-sub-app-b/dist/ dist/subapp/b/",
+    "copy-assets-c": "mkdir -p dist/subapp/c && cp -r node_modules/micro-frontend-sub-app-c/dist/ dist/subapp/c/",
+    "build-app": "yarn build && yarn build-a && yarn build-b && yarn build-c && yarn copy-assets-a && yarn copy-assets-b && yarn copy-assets-c"
   },
   "dependencies": {
     "element-ui": "^2.4.11",
     "jquery": "^3.3.1",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
-    "vuex": "^3.0.1"
+    "vuex": "^3.0.1",
+    "micro-frontend-sub-app-a": "https://github.com/LiShuxue/micro-frontend-sub-app-a.git",
+    "micro-frontend-sub-app-b": "https://github.com/LiShuxue/micro-frontend-sub-app-b.git",
+    "micro-frontend-sub-app-c": "https://github.com/LiShuxue/micro-frontend-sub-app-c.git"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.1.1",

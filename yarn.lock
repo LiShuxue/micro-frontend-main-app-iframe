@@ -5205,6 +5205,30 @@ methods@~1.1.2:
   resolved "http://registry.npm.taobao.org/methods/download/methods-1.1.2.tgz#5529a4d67654134edcc5266656835b0f851afcee"
   integrity sha1-VSmk1nZUE07cxSZmVoNbD4Ua/O4=
 
+"micro-frontend-sub-app-a@https://github.com/LiShuxue/micro-frontend-sub-app-a.git":
+  version "0.1.0"
+  resolved "https://github.com/LiShuxue/micro-frontend-sub-app-a.git#f380ba0e4a1e5eab95d1d648e2c82140c099123e"
+  dependencies:
+    vue "^2.5.17"
+    vue-router "^3.0.1"
+    vuex "^3.0.1"
+
+"micro-frontend-sub-app-b@https://github.com/LiShuxue/micro-frontend-sub-app-b.git":
+  version "0.1.0"
+  resolved "https://github.com/LiShuxue/micro-frontend-sub-app-b.git#eadc73e14d898e19d7e5a67cd40e0a02376bdb08"
+  dependencies:
+    vue "^2.5.17"
+    vue-router "^3.0.1"
+    vuex "^3.0.1"
+
+"micro-frontend-sub-app-c@https://github.com/LiShuxue/micro-frontend-sub-app-c.git":
+  version "0.1.0"
+  resolved "https://github.com/LiShuxue/micro-frontend-sub-app-c.git#0b7c34de360a496f5212fafbf04f2142ea7df876"
+  dependencies:
+    vue "^2.5.17"
+    vue-router "^3.0.1"
+    vuex "^3.0.1"
+
 micromatch@^3.1.10, micromatch@^3.1.4, micromatch@^3.1.8, micromatch@^3.1.9:
   version "3.1.10"
   resolved "http://registry.npm.taobao.org/micromatch/download/micromatch-3.1.10.tgz#70859bc95c9840952f359a068a3fc49f9ecfac23"
