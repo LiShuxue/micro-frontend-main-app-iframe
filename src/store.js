@@ -8,11 +8,15 @@ export default new Vuex.Store({
   state: {
     isAndroid: isAndroid,
     isIOS: isIOS,
-    isMobile: false
+    isMobile: false,
+    wrapperAssetsPath: ''
   },
   mutations: {
     setIsMobileMutation (state, isMobile) {
       state.isMobile = isMobile
+    },
+    setWrapperAssetsPathMutation (state, path) {
+      state.wrapperAssetsPath = path
     }
   },
   actions: {}

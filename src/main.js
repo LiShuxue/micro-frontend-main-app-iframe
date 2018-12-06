@@ -17,4 +17,7 @@ new Vue({
 
 document.addEventListener('deviceready', ()=>{
   store.commit('setIsMobileMutation', (isAndroid || isIOS));
+  if(cordova.file){
+    store.commit('setWrapperAssetsPathMutation', cordova.file.applicationDirectory);
+  }
 }, false);

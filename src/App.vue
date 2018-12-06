@@ -24,8 +24,8 @@
       <router-view />
     </div>
     <div class="sub-app-wrapper" v-for="(item, index) in subAppList" :key="index">
-      <div v-if="$store.state.isAndroid">
-        <sub-app :id="item.id" :src="item.androidSrc"></sub-app>
+      <div v-if="$store.state.isMobile">
+        <sub-app :id="item.id" :src="$store.state.wrapperAssetsPath + item.wrapperSrc"></sub-app>
       </div>
       <div v-else>
         <sub-app :id="item.id" :src="item.src"></sub-app>
