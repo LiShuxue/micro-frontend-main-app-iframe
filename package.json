@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "dev-build": "vue-cli-service build --mode development",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit",
     "start-a": "cd node_modules/micro-frontend-sub-app-a && yarn && yarn serve",
@@ -14,11 +15,16 @@
     "build-a": "cd node_modules/micro-frontend-sub-app-a && yarn && yarn build",
     "build-b": "cd node_modules/micro-frontend-sub-app-b && yarn && yarn build",
     "build-c": "cd node_modules/micro-frontend-sub-app-c && yarn && yarn build",
+    "dev-build-a": "cd node_modules/micro-frontend-sub-app-a && yarn && yarn dev-build",
+    "dev-build-b": "cd node_modules/micro-frontend-sub-app-b && yarn && yarn dev-build",
+    "dev-build-c": "cd node_modules/micro-frontend-sub-app-c && yarn && yarn dev-build",
     "copy-assets-a": "mkdir -p dist/subapp/a && cp -r node_modules/micro-frontend-sub-app-a/dist/ dist/subapp/a/",
     "copy-assets-b": "mkdir -p dist/subapp/b && cp -r node_modules/micro-frontend-sub-app-b/dist/ dist/subapp/b/",
     "copy-assets-c": "mkdir -p dist/subapp/c && cp -r node_modules/micro-frontend-sub-app-c/dist/ dist/subapp/c/",
     "build-app": "yarn build && yarn build-a && yarn build-b && yarn build-c && yarn copy-assets-a && yarn copy-assets-b && yarn copy-assets-c",
-    "build-wrapper": "rm -rf HybridWrapper/www && yarn build-app && cp -r dist/ HybridWrapper/www/ && cd HybridWrapper && cordova prepare"
+    "build-wrapper": "rm -rf HybridWrapper/www && yarn build-app && cp -r dist/ HybridWrapper/www/ && cd HybridWrapper && cordova prepare",
+    "dev-build-app": "yarn dev-build && yarn dev-build-a && yarn dev-build-b && yarn dev-build-c && yarn copy-assets-a && yarn copy-assets-b && yarn copy-assets-c",
+    "dev-build-wrapper": "rm -rf HybridWrapper/www && yarn dev-build-app && cp -r dist/ HybridWrapper/www/ && cd HybridWrapper && cordova prepare"
   },
   "dependencies": {
     "element-ui": "^2.4.11",

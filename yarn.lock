@@ -5207,7 +5207,7 @@ methods@~1.1.2:
 
 "micro-frontend-sub-app-a@https://github.com/LiShuxue/micro-frontend-sub-app-a.git":
   version "0.1.0"
-  resolved "https://github.com/LiShuxue/micro-frontend-sub-app-a.git#f380ba0e4a1e5eab95d1d648e2c82140c099123e"
+  resolved "https://github.com/LiShuxue/micro-frontend-sub-app-a.git#4987d93659e40760a3f56235507fdadd9c185a81"
   dependencies:
     vue "^2.5.17"
     vue-router "^3.0.1"
@@ -5215,7 +5215,7 @@ methods@~1.1.2:
 
 "micro-frontend-sub-app-b@https://github.com/LiShuxue/micro-frontend-sub-app-b.git":
   version "0.1.0"
-  resolved "https://github.com/LiShuxue/micro-frontend-sub-app-b.git#eadc73e14d898e19d7e5a67cd40e0a02376bdb08"
+  resolved "https://github.com/LiShuxue/micro-frontend-sub-app-b.git#3034afe6a89af2942f5ffea76b2d088603c77f54"
   dependencies:
     vue "^2.5.17"
     vue-router "^3.0.1"
@@ -5223,7 +5223,7 @@ methods@~1.1.2:
 
 "micro-frontend-sub-app-c@https://github.com/LiShuxue/micro-frontend-sub-app-c.git":
   version "0.1.0"
-  resolved "https://github.com/LiShuxue/micro-frontend-sub-app-c.git#0b7c34de360a496f5212fafbf04f2142ea7df876"
+  resolved "https://github.com/LiShuxue/micro-frontend-sub-app-c.git#29690b61bef4a7da9d60f94cd069cbd99352f44a"
   dependencies:
     vue "^2.5.17"
     vue-router "^3.0.1"
