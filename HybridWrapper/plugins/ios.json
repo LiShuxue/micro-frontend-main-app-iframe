@@ -12,6 +12,9 @@
     },
     "cordova-plugin-file": {
       "PACKAGE_NAME": "com.sc.wrapper"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.sc.wrapper"
     }
   },
   "dependent_plugins": {}
