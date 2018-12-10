@@ -44,6 +44,14 @@ export default {
       subAppList: subAppConfig.subAppList
     }
   },
+  mounted() {
+    try{
+      console.log(test);
+    }catch(e){
+      this.$throw(e);
+    }
+    console.log(test2);
+  },
   methods: {
     handleSelect (key, keyPath) {
       this.$router.push(key)
